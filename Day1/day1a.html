@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Day1 - installation and data</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Welcome to vue </h1>
+        <p>Below is the user Data:</p>
+        Name: {{name}} <br>
+        Job: {{job}}
+        website: {{website}}
+
+    </div>
+
+    <!--Script for Vue-->
+    <script>
+        new Vue({
+            el: '#root',
+            data: {
+                name: 'Fredrick kelly',
+                job: 'Software Engineer',
+                website: 'https://github.com/iamfredrickokereke'
+            }
+        })
+    </script>
+</body>
+</html>
