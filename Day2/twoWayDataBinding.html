@@ -5,31 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/vue"></script>
-   <style>
-       h2{
-           text-decoration: underline;
-       }
-       .color{
-           color: black;
-       }
-
-       .border{
-           /*text-decoration: line-through; */
-           border: 2px solid black;
-       }
-       .container{
-           background: yellow;
-           padding: 13px;
-           font-size: 2em;
-       }
-
-       #canvas{
-           background: #ddd;
-           width: 400px;
-           height: 400px;
-           margin-top: 20px;
-       }
-   </style>
+      
     <title>Learn Vue - Day 2 - (Understanding Events in VueJs)</title>
 </head>
 <body>
@@ -42,10 +18,8 @@
                 
         </div>
 
-        <input type="text" v-model:value="name"/>
-
-       
-    </input>
+        <input type="text" v-model:value="sname" />
+        
 
 
     <script>
@@ -54,13 +28,8 @@
             data: {
                 title: 'Becoming a Vue Ninja!!!',              
                 classes: ['color', 'border', 'container'],
-                name:'Fredrick'
-            },
-            methods:{
-               
-               updateName(e){
-                   this.name = e.target.value
-               }
+                name:'Fredrick',
+                sname:'Emma'
             }
         })
     </script>
