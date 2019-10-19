@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue"></script>
+   <style>
+       h2{
+           text-decoration: underline;
+       }
+       .color{
+           color: black;
+       }
+
+       .border{
+           /*text-decoration: line-through; */
+           border: 2px solid black;
+       }
+       .container{
+           background: yellow;
+           padding: 13px;
+           font-size: 2em;
+       }
+
+       #canvas{
+           background: #ddd;
+           width: 400px;
+           height: 400px;
+           margin-top: 20px;
+       }
+   </style>
+    <title>Learn Vue - Day 2 - (Understanding Events in VueJs)</title>
+</head>
+<body>
+    <div id="app">
+        <div :class="classes">
+                <h2> Welcome to {{title}}</h2>
+                
+                <button @click='logEvent'>Log Event Info</button>
+                
+                
+        </div>
+
+        <div id="canvas"></div>
+       
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                title: 'Becoming a Vue Ninja!!!',              
+                classes: ['color', 'border', 'container'],
+                wages: 20
+            },
+            methods:{
+               logEvent(e){
+                   console.log(e)
+               }
+            }
+        })
+    </script>
+</body>
+</html>
