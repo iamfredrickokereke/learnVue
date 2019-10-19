@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue"></script>
+   <style>
+       h2{
+           text-decoration: underline;
+       }
+       .color{
+           color: black;
+       }
+
+       .border{
+           /*text-decoration: line-through; */
+           border: 2px solid black;
+       }
+       .container{
+           background: yellow;
+           padding: 13px;
+           font-size: 2em;
+       }
+   </style>
+    <title>Learn Vue - Day 2 - (Understanding Events in VueJs)</title>
+</head>
+<body>
+    <div id="app">
+        <div :class="classes">
+                <h2> Welcome to {{title}}</h2>
+                <p>I earn {{wages}}€ per hour</p>
+                <button v-on:click='wages++'>Increase wage by €5</button>
+                <button v-on:dblclick='wages--'>Decrease wage by €5</button>
+                <button v-on:click='changeWage(5)'>Increase wage by €5</button>
+                <button v-on:dblclick='changeWage(-5)'>Decrease wage by €5</button>
+                
+        </div>
+       
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                title: 'Becoming a Vue Ninja!!!',              
+                classes: ['color', 'border', 'container'],
+                wages: 20
+            },
+            methods:{
+               changeWage(amount){
+                   return this.wages += amount;
+               }
+            }
+        })
+    </script>
+</body>
+</html>
