@@ -10,26 +10,23 @@
 </head>
 <body>
     <div id="app">
-        <div :class="classes">
-                <h2> Welcome to {{title}}</h2>
+       
+            <h2> Welcome to {{title}}</h2>
                 
-                <p>My name is {{name}}</p>
+            <p>My name is {{name}}</p>                
                 
-                
-        </div>
-
-        <input type="text" v-model:value="sname" />
+            <input type="text" v-model:value="name" />
+            <input type="text" v-model="name" />
         
 
-
+    </div>
     <script>
         new Vue({
             el: '#app',
             data: {
                 title: 'Becoming a Vue Ninja!!!',              
-                classes: ['color', 'border', 'container'],
-                name:'Fredrick',
-                sname:'Emma'
+                name: 'oke',
+                
             }
         })
     </script>
