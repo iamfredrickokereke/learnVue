@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/vue"></script>
+   <style>
+       .color{
+           color: black;
+       }
+
+       .border{
+           /*text-decoration: line-through; */
+           border: 2px solid black;
+       }
+       .container{
+           background: yellow;
+           padding: 13px;
+       }
+   </style>
     <title>Learn Vue - Day 2 - (Passing methods in functions)</title>
 </head>
 <body>
     <div id="app">
-       <h2> Welcome to {{title}}</h2>
-       <p>Hello {{name}}, Good {{greet('day')}}</p>
-       <p>Click here to see your <a v-bind:href="url">Tasks</a></p>
-
+        <div :class="classes">
+                <h2> Welcome to {{title}}</h2>
+                <p>Hello {{name}}, Good {{greet('day')}}</p>
+                <p>Click here to see your <a v-bind:href="url">Tasks</a></p>
+         
+        </div>
+       
     </div>
 
 
@@ -22,7 +39,8 @@
             data: {
                 title: 'Becoming a Vue Ninja!!!',
                 name: 'Kelly',
-                url: 'https://github.com/iamfredrickokereke'
+                url: 'https://github.com/iamfredrickokereke',
+                classes: ['color', 'border', 'container']
             },
             methods:{
                 greet(time){
