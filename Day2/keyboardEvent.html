@@ -37,14 +37,14 @@
         <div :class="classes">
                 <h2> Welcome to {{title}}</h2>
                 
-                <button @click='logEvent'>Log Event Info</button>
+                <p>My name is {{name}}</p>
                 
                 
         </div>
 
-        <div id="canvas" @mousemove='logCoords'>{{coord.x}}, {{coord.y}}</div>
+        <input type="text" value="code" @keyup='updateName' />
        
-    </div>
+    </input>
 
 
     <script>
@@ -53,19 +53,12 @@
             data: {
                 title: 'Becoming a Vue Ninja!!!',              
                 classes: ['color', 'border', 'container'],
-                coord:{
-                    x:0,
-                    y:0
-                }
+                name:'Fredrick'
             },
             methods:{
-               logEvent(e){
-                   console.log(e)
-               },
-
-               logCoords(e){
-                   this.coord.x = e.offsetX
-                   this.coord.y = e.offsetY
+               
+               updateName(e){
+                   this.name = e.target.value
                }
             }
         })
