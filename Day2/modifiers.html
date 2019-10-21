@@ -10,11 +10,13 @@
 </head>
 <body>
     <div id="app">
-       
+            <!--Event Handlers check msdn-->
             <h2> Welcome to {{title}}</h2>
             <button @click.alt="greet">Click me</button>
             <button @click.ctrl="greet">Click me</button>
             <button @click.shift="greet">Click me</button>
+
+            <!-- prevent method for event handlers check MSDN -->
             <a href="https://www.google.com" @click.prevent="greet">Visit google</a>
 
 
