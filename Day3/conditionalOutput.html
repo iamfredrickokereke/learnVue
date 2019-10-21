@@ -26,6 +26,9 @@
         <div :class="classes">
                 <h2> Welcome to {{title}}</h2>
                 <p v-if="showTag">Welcome Fredrick</p>
+
+                <!--toggle button state-->
+                <button @click="toggleTag"> showTag : {{showTag}}</button>
               
         </div>
        
@@ -37,10 +40,13 @@
             el: '#app',
             data: {
                 title: 'Becoming a Vue Ninja!!!',
-                classes: ['container', 'color', 'border']
+                classes: ['container', 'color', 'border'],
+                showTag: true
             },    
             methods:{
-                
+                toggleTag(){
+                    this.showTag = !this.showTag
+                }    
             }
         })
     </script>
