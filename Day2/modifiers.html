@@ -12,6 +12,7 @@
     <div id="app">
        
             <h2> Welcome to {{title}}</h2>
+            <button @click="greet">Click me</button>
                 
             
 
@@ -19,6 +20,16 @@
     <script>
         new Vue({
             el: '#app',
+            data: {
+                title: 'Becoming a Vue Ninja!'
+                
+            },
+
+            methods: {
+                greet(){
+                    alert('hi boss!')
+                }
+            }
            
         })
     </script>
