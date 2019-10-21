@@ -25,6 +25,7 @@
     <div id="app">
         <div :class="classes">
                 <h2> Welcome to {{title}}</h2>
+                <p v-if="showTag">Welcome Fredrick</p>
               
         </div>
        
@@ -36,6 +37,7 @@
             el: '#app',
             data: {
                 title: 'Becoming a Vue Ninja!!!',
+                classes: ['container', 'color', 'border']
             },    
             methods:{
                 
