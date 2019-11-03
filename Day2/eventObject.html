@@ -35,11 +35,8 @@
 <body>
     <div id="app">
         <div :class="classes">
-                <h2> Welcome to {{title}}</h2>
-                
-                <button @click='logEvent'>Log Event Info</button>
-                
-                
+                <h2> Welcome to {{title}}</h2>                
+                <button @click='logEvent'>Log Event Info</button>                 
         </div>
 
         <div id="canvas" @mousemove='logCoords'>{{coord.x}}, {{coord.y}}</div>

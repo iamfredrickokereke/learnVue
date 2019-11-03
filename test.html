@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue-Co-ordinates</title>
+
+    <style>
+        #app{
+            width: 300px;
+            height: 300px;
+            background: cadetblue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" @mousemove="move">
+        {{message}}         {{coordinate.X}},{{coordinate.Y}}
+
+        <div v-for="ninja in ninjas">
+            {{'Welcome, our ninja\'s are'}}:
+            {{ninja.name}}  ==>
+            {{ninja.age}}
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                coordinate:{
+                    X:0,
+                    Y:0
+                },
+                message: 'Your mouse Area Co-ordinates are: ',
+                ninjas: [
+                    {name: 'fred', age: 31},
+                    {name: 'nonso', age: 21},
+                    {name: 'charles', age: 30}
+
+                ]                 
+            },
+
+            methods:{
+                move(e){
+                    this.coordinate.X = e.offsetX;
+                    this.coordinate.Y = e.offsetY
+
+                }
+            }
+        })
+    </script>
+</body>
+</html>
