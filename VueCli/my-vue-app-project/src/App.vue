@@ -2,16 +2,20 @@
   <div id="app">
     <h1>Hello, {{msg}}  </h1>
     <Navbar />
+    <Container />
   </div>
 </template>
 
 <script>
 import Navbars from './Navbar';
+import Container from './Container'
 
 export default {
   name: 'app',
   components: {
-    Navbar:Navbars
+    Navbar:Navbars,
+    Container:Container
+
   },
   data () {
     return {
