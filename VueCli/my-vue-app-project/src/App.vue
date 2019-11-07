@@ -4,6 +4,7 @@
     <Navbars />
     <myContainers />
     <Friends />
+    <Online />
     
   </div>
 </template>
@@ -12,6 +13,7 @@
 import Navbars from './Navbar'
 import myContainers from './Container'
 import Friends from './Friends'
+import Online from './Online'
 
 
 export default {
@@ -19,7 +21,9 @@ export default {
   components: {
     Navbars,
     myContainers,
-    Friends
+    Friends,
+    Online
+    
     
 
   },
