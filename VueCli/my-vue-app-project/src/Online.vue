@@ -1,5 +1,6 @@
 <template>
     <div id="online">
+        <h1>Online Friends</h1>
         <div v-for="(friend, index) in friends" :key="index">
             {{friend.status}}
         </div>

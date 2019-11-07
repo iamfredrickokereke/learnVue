@@ -22,10 +22,7 @@ export default {
     Navbars,
     myContainers,
     Friends,
-    Online
-    
-    
-
+    Online 
   },
   data () {
     return {
