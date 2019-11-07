@@ -1,7 +1,8 @@
 <template>
     <div id="all-friends">
+        <h1>All Friends</h1>
         <div v-for="(friend, index) in friends" :key="index">
-            {{ friend.name }}
+            <span>{{friend.name}}</span>
         </div>
     </div>
 </template>
