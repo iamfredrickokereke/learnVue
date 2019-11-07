@@ -12,10 +12,10 @@ export default {
     data(){
         return{
             friends: [
-                {name : 'fred', status: 'online'},
-                {name : 'eddna', status: 'offline'},
-                {name : 'mary', status: 'online'},
-                {name : 'miracle', status: 'offline'}
+                {name : 'fred', status: true},
+                {name : 'eddna', status: false},
+                {name : 'mary', status: true},
+                {name : 'miracle', status: false}
             ]
         }
     }
