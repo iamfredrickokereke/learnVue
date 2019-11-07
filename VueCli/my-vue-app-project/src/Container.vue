@@ -3,6 +3,8 @@
         <h1>Welcome!</h1>
         <hr>
         <p>This is the begining of a new content!</p>
+        <p>This is the begining of a new content!</p>
+        <p>This is the begining of a new content!</p>
     </div>
 </template>
 
@@ -16,7 +18,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
     #apps{
         border: 3px solid #444;
         background: #999;
