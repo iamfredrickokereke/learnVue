@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'AllFriends',
+    name: 'All',
     data(){
         return{
             friends: [

@@ -3,19 +3,20 @@
     <h1>Hello, {{msg}}  </h1>
     <Navbars />
     <myContainers />
-    <AllFriends />
+    
   </div>
 </template>
 
 <script>
-import Navbars from './Navbar';
+import Navbars from './Navbar'
 import myContainers from './Container'
-import AllFriends from './AllFriends'
+
 
 export default {
   name: 'app',
   components: {
-    Navbars, myContainers, AllFriends
+    Navbars,
+    myContainers
 
   },
   data () {
