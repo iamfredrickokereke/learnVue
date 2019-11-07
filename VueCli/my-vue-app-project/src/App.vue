@@ -33,6 +33,7 @@ export default {
                     {name : 'emma', status : true},
                     {name : 'charles', status : false},
                     {name : 'nonso', status : false}
+      ]      
     }
   }
 }
