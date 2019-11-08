@@ -3,8 +3,8 @@
     <h1>Hello, {{msg}}  </h1>
     <Navbars />
     <myContainers />
-    <Friends :pFriends="friends"/>
-    <Online :pOnline="friends"/>
+    <Friends :friends="friends"/>
+    <Online :friends="friends"/>
     
   </div>
 </template>

@@ -10,6 +10,7 @@
 <script> 
     export default{
         name: 'online',
+        props: ['friends'],
         data(){
              return{
 

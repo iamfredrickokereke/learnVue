@@ -9,6 +9,7 @@
 <script>
 export default {
     name:'Friends',
+    props: ['friends'],
     data(){
         return{
             
