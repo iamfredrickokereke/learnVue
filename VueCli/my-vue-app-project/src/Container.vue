@@ -2,7 +2,7 @@
     <div id="apps">
         <h1>Welcome!</h1>
         <hr>
-        
+
         <p>This is the begining of a new content!</p>
         <p>This is the begining of a new content!</p>
         <p>This is the begining of a new content!</p>
