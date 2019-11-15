@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'Welcome to My Vue.js App',
       friends:[
                      
                     {name : 'fred', status : true},
